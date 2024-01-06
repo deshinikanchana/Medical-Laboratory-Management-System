@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.MyProfileFormController">
+    <children>
+        <ImageView fitHeight="864.0" fitWidth="1588.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/labbacground1.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="864.0" layoutX="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0">
+         <fill>
+            <LinearGradient endX="0.861904761904762" endY="0.6666666666666667" startX="0.1285714285714286" startY="0.19047619047619058">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.250980406999588" green="0.7333333492279053" blue="0.7490196228027344" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1442953020134228">
+                     <color>
+                        <Color red="0.250980406999588" green="0.7333333492279053" blue="0.7490196228027344" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.9328859060402684">
+                     <color>
+                        <Color red="0.46666666865348816" green="0.7921568751335144" blue="0.9215686321258545" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.46666666865348816" green="0.7921568751335144" blue="0.9215686321258545" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+        <ImageView fitHeight="45.0" fitWidth="44.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="-1.0" layoutY="6.0" onAction="#onActionBackBtn" prefHeight="49.0" prefWidth="63.0" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <ImageView fitHeight="544.0" fitWidth="570.0" layoutX="549.0" layoutY="161.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/logo.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="63.0" fitWidth="79.0" layoutX="4.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true" />
+        <TextField fx:id="txtUserId" alignment="CENTER" editable="false" layoutX="680.0" layoutY="100.0" prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+            <font>
+                <Font name="FreeSans" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="txtCurrentPassword" alignment="CENTER" layoutX="680.0" layoutY="420.0" prefHeight="49.0" prefWidth="300.0">
+            <font>
+                <Font name="FreeSans" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="txtUserType" alignment="CENTER" editable="false" layoutX="680.0" layoutY="180.0" prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+            <font>
+                <Font name="FreeSans" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="580.0" prefHeight="49.0" prefWidth="190.0" text="Confirm Password :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtNewPassword" alignment="CENTER" layoutX="680.0" layoutY="500.0" prefHeight="49.0" prefWidth="300.0">
+            <font>
+                <Font name="FreeSans" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <JFXButton fx:id="UpdateBtn" buttonType="RAISED" layoutX="768.0" layoutY="754.0" onAction="#onActionUpdateBtn" prefHeight="56.0" prefWidth="132.0" style="-fx-background-color: #1cb958;" text="Update" textFill="#070000">
+            <font>
+                <Font name="DejaVu Serif Bold" size="16.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <CheckBox fx:id="cbShowPW" layoutX="680.0" layoutY="648.0" mnemonicParsing="false" onAction="#onActioncbShowPw" prefHeight="44.0" prefWidth="165.0" text="Show Password " textFill="#070000">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+        </CheckBox>
+      <TextField fx:id="txtUserName" alignment="CENTER" layoutX="680.0" layoutY="260.0" onAction="#onActionTxtUName" prefHeight="49.0" prefWidth="300.0">
+         <font>
+            <Font name="FreeSans" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="pwfNewPassword" alignment="CENTER" layoutX="680.0" layoutY="500.0" onAction="#onActionNewPw" prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </PasswordField>
+      <PasswordField fx:id="pwfCurrentPassword" alignment="CENTER" layoutX="680.0" layoutY="420.0" onAction="#onActionCurrentPw" prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="txtConfirmPassword" alignment="CENTER" layoutX="680.0" layoutY="580.0" prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <font>
+            <Font name="FreeSans" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <PasswordField fx:id="pwfConfirmPw" alignment="CENTER" layoutX="680.0" layoutY="580.0" prefHeight="49.0" prefWidth="300.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+      <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="500.0" prefHeight="49.0" prefWidth="190.0" text="New Password :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="420.0" prefHeight="49.0" prefWidth="190.0" text="Current Password :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="260.0" prefHeight="49.0" prefWidth="190.0" text="user Name :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="180.0" prefHeight="49.0" prefWidth="190.0" text="User Type :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="100.0" prefHeight="49.0" prefWidth="190.0" text="User Id :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="63.0" layoutX="4.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/profile icon.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEmail" alignment="CENTER" layoutX="680.0" layoutY="340.0" onAction="#onActiontxtemail" prefHeight="49.0" prefWidth="300.0">
+         <font>
+            <Font name="FreeSans" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="430.0" layoutY="340.0" prefHeight="49.0" prefWidth="190.0" text="Email :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

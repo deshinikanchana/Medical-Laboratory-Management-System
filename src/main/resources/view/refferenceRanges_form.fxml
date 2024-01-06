@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="749.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.RefferenceRangesFormController">
+   <children>
+      <ImageView fitHeight="749.0" fitWidth="1337.0" layoutX="-280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/labbacground1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="328.0" fitWidth="343.0" layoutX="355.0" layoutY="211.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER_RIGHT" layoutX="175.0" layoutY="50.0" prefHeight="51.0" prefWidth="198.0" text="Test Code :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="175.0" layoutY="210.0" prefHeight="51.0" prefWidth="198.0" text="Sub Test  :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="175.0" layoutY="293.0" prefHeight="51.0" prefWidth="198.0" text="Refference ranges  :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <TextField fx:id="txtRefRange" layoutX="420.0" layoutY="290.0" onAction="#onActionReferenceRange" prefHeight="57.0" prefWidth="400.0" />
+      <TableView fx:id="tblRefRanges" layoutY="489.0" prefHeight="260.0" prefWidth="1052.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="131.0" text="Test Code" />
+          <TableColumn fx:id="colSubTestCode" prefWidth="117.0" text="Sub Test Code" />
+            <TableColumn fx:id="colSubTestName" prefWidth="276.0" text="Sub Test Name" />
+            <TableColumn fx:id="colRefRange" prefWidth="371.0" text="Refference Range " />
+            <TableColumn fx:id="colUnit" prefWidth="156.0" text="Unit" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="saveBtn" alignment="CENTER" buttonType="RAISED" layoutX="440.0" layoutY="420.0" onAction="#onActionSaveBtn" prefHeight="43.0" prefWidth="101.0" style="-fx-background-color: #40bbbf;" text="Save" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="updateBtn" alignment="CENTER" buttonType="RAISED" layoutX="620.0" layoutY="420.0" onAction="#onActionUpdateBtn" prefHeight="43.0" prefWidth="101.0" style="-fx-background-color: #40bbbf;" text="Update" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="deleteBtn" alignment="CENTER" buttonType="RAISED" layoutX="800.0" layoutY="420.0" onAction="#onActionDeleteBtn" prefHeight="43.0" prefWidth="101.0" style="-fx-background-color: #40bbbf;" text="Delete" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtTestCode" layoutX="420.0" layoutY="50.0" prefHeight="51.0" prefWidth="260.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="175.0" layoutY="130.0" prefHeight="51.0" prefWidth="198.0" text="Sub Test Code  :">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <TextField fx:id="txtSubTestName" layoutX="420.0" layoutY="210.0" onAction="#onActionSubTestName" prefHeight="51.0" prefWidth="505.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtUnit" layoutX="840.0" layoutY="293.0" prefHeight="51.0" prefWidth="171.0" promptText="Unit">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtSubTestCode" layoutX="420.0" layoutY="130.0" prefHeight="51.0" prefWidth="260.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label alignment="CENTER" layoutX="313.0" layoutY="2.0" prefHeight="35.0" prefWidth="426.0" style="-fx-background-color: #069ac3;" text="Add Sub Test Details" textAlignment="JUSTIFY" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

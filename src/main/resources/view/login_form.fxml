@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.LoginFormController">
+
+    <children>
+        <ImageView fx:id="welcome" fitHeight="864.0" fitWidth="1180.0" layoutX="-2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/login bg.jpeg" />
+            </image>
+        </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77caeb" height="865.0" layoutX="768.0" stroke="TRANSPARENT" strokeType="INSIDE" width="768.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ad42eb43" height="431.0" layoutX="871.0" layoutY="405.0" stroke="#070000" strokeType="INSIDE" width="556.0" />
+      <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="1107.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/User1.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="854.0" layoutY="543.0" prefHeight="38.0" prefWidth="140.0" text="User Name :" textAlignment="CENTER" textFill="#050004f7">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="854.0" layoutY="620.0" prefHeight="38.0" prefWidth="140.0" text="Password :" textFill="#050004">
+         <font>
+            <Font name="FreeSerif Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUsername" alignment="CENTER" layoutX="996.0" layoutY="540.0" onAction="#onActionUserName" prefHeight="44.0" prefWidth="312.0">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtPassword" alignment="CENTER" layoutX="996.0" layoutY="617.0" opacity="1.0" prefHeight="44.0" prefWidth="312.0">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="pwFieldPw" alignment="CENTER" layoutX="996.0" layoutY="617.0" prefHeight="44.0" prefWidth="312.0">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </PasswordField>
+      <CheckBox fx:id="CheckBoxShowPw" layoutX="996.0" layoutY="670.0" mnemonicParsing="false" onAction="#onActionCheckBoxShowPw" prefHeight="23.0" prefWidth="156.0" text="Show Password">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <JFXButton fx:id="loginBtn" buttonType="RAISED" layoutX="1026.0" layoutY="741.0" onAction="#OnActionLoginBtn" prefHeight="45.0" prefWidth="252.0" ripplerFill="#596161" style="-fx-background-color: #14c786;" text="Log In" textFill="#070000">
+         <font>
+            <Font name="Yrsa Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <ImageView fitHeight="240.0" fitWidth="256.0" layoutX="1023.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="979.0" layoutY="254.0" prefHeight="23.0" prefWidth="341.0" text="Your Health,Our Highest Priority" textFill="#0c3c85f9">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="970.0" layoutY="277.0" prefHeight="53.0" prefWidth="358.0" text="SUWASAHANA">
+         <font>
+            <Font name="MathJax_Main-Bold" size="35.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6362085938453674" green="0.2089424878358841" blue="0.9210526347160339" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.19463087248322147">
+                     <color>
+                        <Color red="0.6362085938453674" green="0.2089424878358841" blue="0.9210526347160339" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8557046979865771">
+                     <color>
+                        <Color red="0.02905701845884323" green="0.6973684430122375" blue="0.4523209035396576" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.02905701845884323" green="0.6973684430122375" blue="0.4523209035396576" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="908.0" layoutY="330.0" prefHeight="60.0" prefWidth="488.0" text="Medical Laboratory">
+         <font>
+            <Font name="Liberation Serif Bold" size="50.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9761904761904762" endY="0.9333333333333333" startX="0.05238095238095238">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.011330408975481987" green="0.40789473056793213" blue="0.25587841868400574" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.33341455459594727" green="0.06335282325744629" blue="0.5263158082962036" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Hyperlink fx:id="HyperlinkForgetPw" alignment="CENTER_RIGHT" layoutX="1122.0" layoutY="796.0" onAction="#onActionForgetPw" prefHeight="0.0" prefWidth="156.0" text="Forgot Password ??" textFill="#0c3cfaea">
+         <font>
+            <Font name="DejaVu Sans" size="13.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fitHeight="45.0" fitWidth="40.0" layoutX="871.0" layoutY="405.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/back.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="871.0" layoutY="405.0" onAction="#onActionBackBtn" prefHeight="40.0" prefWidth="40.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+        </children>
+</AnchorPane>

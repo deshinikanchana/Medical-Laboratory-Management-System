@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-12-03T05:08:04 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Pay_Slip" pageWidth="400" pageHeight="842" columnWidth="360" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2b8fe0b1-68b2-44b0-a925-cac20365edc0">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="empId" class="java.lang.String"/>
+	<parameter name="designation" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="workedDays" class="java.lang.String"/>
+	<parameter name="basicSalary" class="java.lang.String"/>
+	<parameter name="nopayDeduction" class="java.lang.String"/>
+	<parameter name="totalEPF" class="java.lang.String"/>
+	<parameter name="otHrs" class="java.lang.String"/>
+	<parameter name="otAmount" class="java.lang.String"/>
+	<parameter name="grossSal" class="java.lang.String"/>
+	<parameter name="epf8%" class="java.lang.String"/>
+	<parameter name="TotalDeduction" class="java.lang.String"/>
+	<parameter name="netSal" class="java.lang.String"/>
+	<parameter name="EPF" class="java.lang.String"/>
+	<parameter name="ETF" class="java.lang.String"/>
+	<parameter name="noPayHrs" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="752" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="360" height="1" uuid="674ec41b-b1e1-4ce4-9892-731e26713298"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="1" height="745" uuid="a3689a93-44a0-474c-90da-a1ec7771f7c3"/>
+			</line>
+			<line>
+				<reportElement x="359" y="0" width="1" height="745" uuid="bcfedc80-ffc5-49d0-8d0b-e57bbc1fcdc6"/>
+			</line>
+			<line>
+				<reportElement x="0" y="745" width="360" height="1" uuid="642b3de5-33b8-4167-bf14-4bf7fc77602e"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="10" width="340" height="39" uuid="f8885a69-e24d-48ef-a36e-4167cb8dd3b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+					<font fontName="DejaVu Serif" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUWASAHANA MEDICAL LABORATORY ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="50" width="173" height="20" uuid="29390ef0-4e42-4b24-86ac-08333ce73b2b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ No.12,Kaluwella Rd,Galle.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="70" width="100" height="20" uuid="5f711d1f-4404-481b-b260-591a27001b27"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tel : 0774523096]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="92" width="100" height="27" uuid="5f560410-1689-483e-9bb6-d9bdfdf8665a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pay Slip]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="130" width="110" height="23" uuid="aad3646e-d0e3-4144-86a7-07bf6a82671e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="155" width="110" height="23" uuid="9e6c4d16-13b4-4558-a0fd-0f22808207c4">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Name ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="178" width="110" height="23" uuid="feb1da18-6765-47f5-8eef-b0f73ebf8dc8">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Emp. No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="200" width="110" height="23" uuid="811a1635-f083-428f-a2ea-d863e9146228">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Designation]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="250" width="110" height="23" uuid="3ce9726f-7e60-4a49-8c02-a04d31eb3a16">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Worked Days ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="280" width="110" height="23" uuid="588a13f6-a2df-44a8-a922-b6f9f469614f">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Basic Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="310" width="110" height="23" uuid="e997a2f9-f93f-4b41-91e5-7f9a37c10f82"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NoPay Hrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="340" width="110" height="23" uuid="8ff0c820-a244-44a1-a9fd-705b831cdb23">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[NoPay Deduction]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="400" width="110" height="23" uuid="243cbddf-5970-4cc0-8181-280a1f7a164d">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[OT Hrs]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="430" width="110" height="23" uuid="ab4cd77e-7524-43c9-9e01-66bddc24408d">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[OT Amount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="460" width="110" height="23" uuid="1a7edccc-00cf-44b6-ba92-e5ae16bd1b30">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Other Allowances]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="520" width="110" height="23" uuid="61164173-e9c5-4bf3-84e6-be49f180f510">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[EPF 8%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="550" width="110" height="23" uuid="2a99137e-0bb8-4cfc-86cd-5e440de8d8ff">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Deductions ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="580" width="110" height="23" uuid="60237392-5057-45d6-b244-ee2eaf6a8ed8">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Stamp Duty]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="670" width="110" height="23" uuid="ff6b9294-d578-46c9-b6c8-dd6cfed73540">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[EPF 12%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="60" y="700" width="110" height="23" uuid="99d0ced4-6650-4362-ba17-1f26f655cfd2">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="FreeSerif" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ETF 3%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="370" width="126" height="20" uuid="72ac41c6-fbea-4378-876e-bf15afa02d0e">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total For EPF/ETF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="490" width="126" height="20" uuid="9888a723-72cf-4e6d-9dbb-5d03a93c5885">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gross Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="610" width="126" height="20" uuid="fa1e5204-db31-4849-92e5-b11bde41f213">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Deductions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="640" width="126" height="20" uuid="cd9dea36-7ab3-4b1b-9864-f4884a75fda2">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Net Salary]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="486" width="360" height="1" uuid="c8d64f54-bdd1-4e86-b3c1-ed9aa43a2f2b"/>
+			</line>
+			<line>
+				<reportElement x="0" y="395" width="360" height="1" uuid="d1efd326-f305-4c45-bda4-d5ed81c27ab3"/>
+			</line>
+			<line>
+				<reportElement x="-1" y="370" width="360" height="1" uuid="df9dfc5f-f21a-4e83-b0aa-63548dd5bdaa"/>
+			</line>
+			<line>
+				<reportElement x="0" y="514" width="360" height="1" uuid="b0e8f81b-ee0e-454b-8369-8cdf51c24e21"/>
+			</line>
+			<line>
+				<reportElement x="0" y="606" width="360" height="1" uuid="50ae8fda-f91c-45cc-bfd3-0afa3a8fe0fb"/>
+			</line>
+			<line>
+				<reportElement x="0" y="635" width="360" height="1" uuid="95649442-2e4a-47cf-a2c1-c519ceace17f"/>
+			</line>
+			<line>
+				<reportElement x="0" y="665" width="360" height="1" uuid="700052f9-0c40-4b97-8fee-2baca3108d7a"/>
+			</line>
+			<textField>
+				<reportElement x="180" y="178" width="100" height="23" uuid="73f3f1e7-4099-4b95-8744-fa8b57c04dd3">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Math TeX Gyre" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{empId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="200" width="100" height="23" uuid="7eadc0bb-a88b-469d-a173-5f988b001529">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Math TeX Gyre" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{designation}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="130" width="100" height="23" uuid="72c8b64c-a819-47a6-bca9-ea25be58b169"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Math TeX Gyre" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="155" width="100" height="23" uuid="829a24f4-9829-4dd2-87b6-bf4e678c8dac"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Math TeX Gyre" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="250" width="110" height="22" uuid="7ed6dfba-1645-42f4-b9e5-ced8537e63bf">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{workedDays}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="280" width="110" height="22" uuid="ba3ff6b0-48da-48e4-b886-b2d886eaac02"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{basicSalary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="340" width="110" height="22" uuid="7f3f0351-c882-4ac7-8590-f37d76cffa01"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nopayDeduction}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="369" width="110" height="22" uuid="bfabed08-b24e-4b14-9b27-f0bee399d70f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Schoolbook L" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalEPF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="400" width="110" height="22" uuid="46ea6a7a-4d8e-4a56-9835-fa6c62ba9083"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{otHrs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="430" width="110" height="22" uuid="c3d8a740-505d-49aa-a8dd-e2ad07da2547"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{otAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="489" width="110" height="22" uuid="9e4d8c16-d6c1-433a-a198-2eb421d197f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Schoolbook L" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{grossSal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="520" width="110" height="22" uuid="0d14ccf9-5773-4f53-b07a-970cfc0b9484"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{epf8%}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="609" width="110" height="22" uuid="31209469-9f11-46c9-97db-5a94f31e7171"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Schoolbook L" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{TotalDeduction}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="639" width="110" height="22" uuid="e4e5a587-6705-45d1-8ff2-a8944c6705f7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Century Schoolbook L" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{netSal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="670" width="110" height="22" uuid="8e4286d3-c621-4a66-bc49-b81c9ab82ef0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{EPF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="700" width="110" height="22" uuid="00759001-8e1e-4f16-b34b-2e1f5eea5772"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ETF}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="310" width="110" height="22" uuid="05eb3a0e-4263-4be7-a7ac-e2f11809382f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{noPayHrs}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="210" y="460" width="110" height="23" uuid="889c8155-b498-4546-83f3-6946d0bf357f">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="550" width="110" height="23" uuid="7b57f3c0-62cb-485f-af3a-3d3d9a650de0">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="580" width="110" height="23" uuid="cc55e74d-9dc5-49f3-8dd3-7230b7366c62">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[-]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

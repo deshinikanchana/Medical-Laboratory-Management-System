@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="588.0" prefWidth="785.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.VerificationFormController">
+    <children>
+        <ImageView fitHeight="596.0" fitWidth="1063.0" layoutX="-2.0" layoutY="-8.0" opacity="0.87" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/bgnew.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#58b6c7a3" height="588.0" layoutX="121.0" stroke="#303a80" strokeType="INSIDE" width="544.0" />
+        <Label alignment="CENTER" layoutX="180.0" layoutY="14.0" prefHeight="54.0" prefWidth="426.0" text="OTP Verification" textFill="#070000">
+            <font>
+                <Font name="DejaVu Serif Bold" size="25.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="221.0" layoutY="270.0" prefHeight="77.0" prefWidth="344.0" text="Enter The  OTP Code We Just Sent You On Your Email Address." textAlignment="CENTER" textFill="#070000" wrapText="true">
+            <font>
+                <Font name="DejaVu Sans" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtOtp" layoutX="264.0" layoutY="373.0" prefHeight="47.0" prefWidth="254.0" promptText="Enter The OTP Code">
+            <font>
+                <Font name="DejaVu Serif Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <JFXButton fx:id="verifyBtn" alignment="CENTER" buttonType="RAISED" layoutX="337.0" layoutY="505.0" onAction="#onActionVerifyBtn" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #3752f0;" text="Verify" textFill="#070000">
+            <font>
+                <Font name="Yrsa Bold" size="23.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <ImageView fitHeight="199.0" fitWidth="218.0" layoutX="285.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/otp.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="linkResendCode" layoutX="441.0" layoutY="438.0" onAction="#onActionResesndCode" text="Resend Code" textFill="#3f59eb">
+         <font>
+            <Font name="DejaVu Sans Bold" size="12.0" />
+         </font>
+      </Hyperlink>
+    </children>
+</AnchorPane>

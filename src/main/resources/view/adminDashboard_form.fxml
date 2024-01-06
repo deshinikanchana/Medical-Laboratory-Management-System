@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.AdminDashboardFormController">
+   <children>
+      <ImageView fitHeight="864.0" fitWidth="1551.0" layoutX="24.0" opacity="0.8" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/lab 1.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77caeb" height="864.0" layoutX="1.0" stroke="#ffffff00" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="3.0" width="399.0" />
+      <ImageView fitHeight="130.0" fitWidth="120.0" layoutX="4.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/User1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="85.0" layoutX="32.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/user icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="32.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/employee icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="35.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/lab test icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="85.0" fitWidth="79.0" layoutX="35.0" layoutY="519.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/stock icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="85.0" layoutX="32.0" layoutY="630.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/profile icon.png" />
+         </image>
+      </ImageView>
+      <Line endX="234.5" fill="WHITE" layoutX="155.0" layoutY="726.0" opacity="0.7" startX="-142.00001525878906" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Line>
+      <Label alignment="CENTER" layoutX="110.0" layoutY="181.0" prefHeight="93.0" prefWidth="278.0" text="Users" textFill="#1e0101">
+         <font>
+            <Font name="DejaVu Serif Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="120.0" layoutY="284.0" prefHeight="103.0" prefWidth="270.0" text="Employees" textFill="#0a0000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="114.0" layoutY="621.0" prefHeight="103.0" prefWidth="270.0" text="My Profile" textFill="#1e0101">
+         <font>
+            <Font name="DejaVu Serif Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="117.0" layoutY="507.0" prefHeight="103.0" prefWidth="270.0" text="Stock" textFill="#1e0101">
+         <font>
+            <Font name="DejaVu Serif Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="117.0" layoutY="395.0" prefHeight="103.0" prefWidth="270.0" text="Tests" textFill="#1e0101">
+         <font>
+            <Font name="DejaVu Serif Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="employeesBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="284.0" onAction="#onActionEmployeesBtn" prefHeight="103.0" prefWidth="382.0" ripplerFill="#00000003" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="testsBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="394.0" onAction="#onActionTestsBtn" prefHeight="103.0" prefWidth="382.0" ripplerFill="#00000003" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="stockBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="507.0" onAction="#onActionStockBtn" prefHeight="103.0" prefWidth="382.0" ripplerFill="#00000003" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="myProfileBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="619.0" onAction="#onActionMyProfileBtn" prefHeight="103.0" prefWidth="382.0" ripplerFill="#00000003" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="logOutBtn" alignment="CENTER" buttonType="RAISED" layoutX="137.0" layoutY="783.0" onAction="#onActionLogOutButton" prefHeight="44.0" prefWidth="128.0" ripplerFill="#8f8f8f00" style="-fx-background-color: #40bbbf;" text="Log Out">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="usersBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="175.0" onAction="#onActionUsersBtn" prefHeight="103.0" prefWidth="382.0" ripplerFill="#00000003" text="  " textAlignment="CENTER">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <TextField fx:id="txtUserName" alignment="CENTER" editable="false" layoutX="141.0" layoutY="45.0" prefHeight="36.0" prefWidth="249.0" style="-fx-background-color: #77caeb;">
+         <font>
+            <Font name="DejaVu Serif Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtUserType" alignment="CENTER" editable="false" layoutX="141.0" layoutY="78.0" prefHeight="17.0" prefWidth="249.0" style="-fx-background-color: #77caeb;">
+         <font>
+            <Font name="DejaVu Serif" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Line endX="234.5" fill="WHITE" layoutX="155.0" layoutY="501.0" opacity="0.7" startX="-142.00001525878906" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Line>
+      <Line endX="234.5" fill="WHITE" layoutX="155.0" layoutY="614.0" opacity="0.7" startX="-142.00001525878906" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Line>
+      <Line endX="234.5" fill="WHITE" layoutX="155.0" layoutY="389.0" opacity="0.7" startX="-142.00001525878906" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Line>
+      <Line endX="234.5" fill="WHITE" layoutX="155.0" layoutY="281.0" opacity="0.7" startX="-142.00001525878906" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Line>
+      <Line endX="234.5" fill="WHITE" layoutX="155.0" layoutY="171.0" opacity="0.7" startX="-142.00001525878906" stroke="WHITE" strokeWidth="5.0">
+         <effect>
+            <Glow />
+         </effect>
+      </Line>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bfe0ff66" height="112.0" layoutX="395.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1141.0" />
+      <Label alignment="CENTER" layoutX="408.0" layoutY="120.0" opacity="0.71" prefHeight="139.0" prefWidth="311.0" style="-fx-background-color: #422beb;" textFill="#3ed78d">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="802.0" layoutY="2.0" prefHeight="49.0" prefWidth="215.0" text="Today Tests Count" textFill="#070000">
+         <font>
+            <Font name="Norasi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="2.0" prefHeight="49.0" prefWidth="233.0" text="Today Employees Count" textFill="#070000">
+         <font>
+            <Font name="Norasi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtTodayempCount" alignment="CENTER" layoutX="527.0" layoutY="48.0" prefHeight="60.0" prefWidth="73.0" style="-fx-background-color: #c6bfbf;" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtTodayTestCount" alignment="CENTER" layoutX="853.0" layoutY="48.0" prefHeight="60.0" prefWidth="73.0" style="-fx-background-color: #c6bfbf;" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="93.0" fitWidth="109.0" layoutX="1166.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/calender 1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="1291.0" layoutY="56.0" prefHeight="44.0" prefWidth="215.0" style="-fx-background-color: #c7c1c1;" textFill="#864d0f">
+         <font>
+            <Font name="Rasa Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="63.0" layoutX="1213.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/clock 1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="1291.0" layoutY="16.0" prefHeight="44.0" prefWidth="215.0" style="-fx-background-color: #c7c1c1;" textFill="#864d0f">
+         <font>
+            <Font name="Rasa Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="139.0" fitWidth="146.0" layoutX="576.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/od.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="49.0" layoutX="670.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/pend.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="408.0" layoutY="120.0" prefHeight="85.0" prefWidth="162.0" text="Pending Orders" textAlignment="CENTER" textFill="#070000" wrapText="true">
+         <font>
+            <Font name="FreeSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPendingOrders" alignment="CENTER" layoutX="453.0" layoutY="203.0" prefHeight="49.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="800.0" layoutY="118.0" opacity="0.71" prefHeight="139.0" prefWidth="311.0" style="-fx-background-color: #422beb;" textFill="#853ed6">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="800.0" layoutY="118.0" prefHeight="79.0" prefWidth="162.0" text="Stock Warnings" textAlignment="CENTER" textFill="#070000" wrapText="true">
+         <font>
+            <Font name="FreeSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="984.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/stock icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="66.0" layoutX="1046.0" layoutY="188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/warn.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="1200.0" layoutY="118.0" opacity="0.71" prefHeight="139.0" prefWidth="311.0" style="-fx-background-color: #422beb;" textFill="#422beb">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="1200.0" layoutY="118.0" prefHeight="79.0" prefWidth="162.0" text="Pending Reports" textAlignment="CENTER" textFill="#070000" wrapText="true">
+         <font>
+            <Font name="FreeSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtStockWarnings" alignment="CENTER" layoutX="845.0" layoutY="202.0" prefHeight="49.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtPendingReports" alignment="CENTER" layoutX="1237.0" layoutY="202.0" prefHeight="49.0" prefWidth="73.0" style="-fx-background-color: #ffffff;" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="124.0" fitWidth="128.0" layoutX="1375.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/report icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="49.0" layoutX="1462.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/pend.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnPendingOrders" buttonType="RAISED" layoutX="408.0" layoutY="120.0" onAction="#onActionPendingOrders" prefHeight="139.0" prefWidth="311.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnPendingReports" buttonType="RAISED" layoutX="1200.0" layoutY="118.0" onAction="#onActionPendingReports" prefHeight="139.0" prefWidth="311.0" text=" " textFill="#fcf9f9ba">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnWarning" buttonType="RAISED" layoutX="800.0" layoutY="118.0" onAction="#onActionBtnWarning" prefHeight="139.0" prefWidth="311.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

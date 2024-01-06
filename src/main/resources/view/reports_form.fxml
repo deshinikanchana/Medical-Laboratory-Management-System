@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.ReportsFormController">
+
+    <children>
+        <ImageView fitHeight="864.0" fitWidth="1588.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/labbacground1.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#40bbbf" height="864.0" layoutX="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+        <ImageView fitHeight="45.0" fitWidth="44.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="-1.0" layoutY="6.0" onAction="#onActionBackBtn" prefHeight="49.0" prefWidth="63.0" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <ImageView fitHeight="434.0" fitWidth="608.0" layoutX="540.0" layoutY="72.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/logo.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="tblReports" layoutX="72.0" layoutY="490.0" prefHeight="374.0" prefWidth="1464.0">
+            <columns>
+                <TableColumn fx:id="colDate" prefWidth="182.0" text="Date" />
+                <TableColumn fx:id="colPatientId" prefWidth="204.0" text="Patient Id" />
+                <TableColumn fx:id="colPatientName" prefWidth="323.0" text="Patient Name" />
+                <TableColumn fx:id="colTestName" minWidth="0.0" prefWidth="500.0" text="Test Name" />
+                <TableColumn fx:id="colComment1" prefWidth="254.0" text="Report" />
+            </columns>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+        </TableView>
+      <ComboBox fx:id="cmbPresId" editable="true" layoutX="370.0" layoutY="25.0" onAction="#onActionCmbPresidSearch" prefHeight="49.0" prefWidth="234.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <TextField fx:id="txtPtName" alignment="CENTER" editable="false" layoutX="1001.0" layoutY="100.0" prefHeight="44.0" prefWidth="341.0" promptText=" " style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="DejaVu Sans" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtComment" alignment="CENTER" layoutX="573.0" layoutY="326.0" prefHeight="49.0" prefWidth="444.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="DejaVu Serif" size="16.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="94.0" fitWidth="73.0" layoutX="-1.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/report icon.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="-1.0" layoutY="392.0" prefHeight="82.0" prefWidth="73.0" text=" " />
+      <ComboBox fx:id="cmbTestCode" editable="true" layoutX="366.0" layoutY="175.0" onAction="#onActionTestCodeSearch" prefHeight="49.0" prefWidth="234.0" promptText=" " style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+      <Label fx:id="lblDate" alignment="CENTER" layoutX="1045.0" layoutY="27.0" prefHeight="49.0" prefWidth="253.0" style="-fx-background-color: #ffffff;" text=" " textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="831.0" layoutY="100.0" prefHeight="44.0" prefWidth="149.0" text="Patient Name :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <TextField fx:id="txtTestName" alignment="CENTER" editable="false" layoutX="1001.0" layoutY="178.0" prefHeight="44.0" prefWidth="341.0" promptText=" " style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="831.0" layoutY="178.0" prefHeight="44.0" prefWidth="149.0" text="Test Name :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="391.0" layoutY="329.0" prefHeight="44.0" prefWidth="149.0" text="Comment :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="189.0" layoutY="178.0" prefHeight="44.0" prefWidth="149.0" text="Test Code :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="189.0" layoutY="28.0" prefHeight="44.0" prefWidth="149.0" text="Prescription Id :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <TextField fx:id="txtPtId" alignment="CENTER" editable="false" layoutX="369.0" layoutY="100.0" prefHeight="44.0" prefWidth="234.0" promptText=" " style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="DejaVu Sans" size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="189.0" layoutY="100.0" prefHeight="44.0" prefWidth="149.0" text="Patient Id :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <JFXButton fx:id="BtnGetReport" alignment="CENTER" buttonType="RAISED" layoutX="689.0" layoutY="414.0" onAction="#onActionBtnGetReport" prefHeight="55.0" prefWidth="159.0" style="-fx-background-color: #77caeb;" text="Get Report " textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSubTestResults" alignment="CENTER" buttonType="RAISED" layoutX="688.0" layoutY="247.0" onAction="#onActionSubTestResults" prefHeight="55.0" prefWidth="159.0" style="-fx-background-color: #14c786;" text="Add Results +" textAlignment="CENTER" textFill="#070000" wrapText="true">
+         <font>
+            <Font name="DejaVu Serif Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+
+</AnchorPane>

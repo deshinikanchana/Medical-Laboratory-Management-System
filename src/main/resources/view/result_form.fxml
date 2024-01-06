@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="749.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.ResultFormController">
+    <children>
+        <ImageView fitHeight="749.0" fitWidth="1337.0" layoutX="-280.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/labbacground1.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="328.0" fitWidth="343.0" layoutX="355.0" layoutY="211.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/logo.png" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER_RIGHT" layoutX="115.0" layoutY="46.0" prefHeight="51.0" prefWidth="198.0" text="Test Code :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="115.0" layoutY="166.0" prefHeight="51.0" prefWidth="198.0" text="Sub Test  :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="115.0" layoutY="226.0" prefHeight="51.0" prefWidth="198.0" text="Refference ranges  :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+        <TextField fx:id="txtRefRange" layoutX="365.0" layoutY="230.0" prefHeight="43.0" prefWidth="400.0" />
+        <TableView fx:id="tblSubTestResults" layoutY="350.0" prefHeight="326.0" prefWidth="1052.0">
+            <columns>
+                <TableColumn fx:id="colSubTestCode" prefWidth="251.0" text="Sub Test code" />
+                <TableColumn fx:id="colSubTestName" prefWidth="400.0" text="Sub Test Name" />
+                <TableColumn fx:id="colResult" prefWidth="400.0" text="Result" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtTestCode" layoutX="365.0" layoutY="50.0" onAction="#onActionTestCode" prefHeight="43.0" prefWidth="260.0">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor></TextField>
+        <Label alignment="CENTER_RIGHT" layoutX="115.0" layoutY="106.0" prefHeight="51.0" prefWidth="198.0" text="Sub Test Code  :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </Label>
+        <TextField fx:id="txtSubTestName" editable="false" layoutX="365.0" layoutY="170.0" prefHeight="43.0" prefWidth="505.0">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </TextField>
+        <TextField fx:id="txtUnit" layoutX="801.0" layoutY="234.0" prefHeight="35.0" prefWidth="171.0" promptText="Unit">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <Label alignment="CENTER" layoutX="313.0" layoutY="2.0" prefHeight="35.0" prefWidth="426.0" style="-fx-background-color: #069ac3;" text="Add Test Result" textAlignment="JUSTIFY" textFill="#070000">
+            <font>
+                <Font name="DejaVu Serif Bold" size="20.0" />
+            </font>
+        </Label>
+      <JFXComboBox fx:id="cmbSubTest" layoutX="365.0" layoutY="110.0" onAction="#onActionCmbSubTest" prefHeight="43.0" prefWidth="260.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <Label alignment="CENTER_RIGHT" layoutX="115.0" layoutY="286.0" prefHeight="51.0" prefWidth="198.0" text="Result  :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <TextField fx:id="txtResult" layoutX="365.0" layoutY="290.0" onAction="#onActionTxtResult" prefHeight="43.0" prefWidth="400.0" />
+      <JFXButton fx:id="btnAddtoReport" buttonType="RAISED" layoutX="833.0" layoutY="692.0" onAction="#onActionAddToReport" prefHeight="43.0" prefWidth="145.0" style="-fx-background-color: #14c786;" text="Add To Report" textFill="#070000">
+         <font>
+            <Font name="Yrsa Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+    </children>
+</AnchorPane>

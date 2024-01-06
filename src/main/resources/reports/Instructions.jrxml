@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-12-05T13:01:03 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="def" pageWidth="450" pageHeight="400" columnWidth="410" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="46a03e25-3eb4-4d16-812c-628ac0734d25">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="instructions" class="java.lang.String"/>
+	<parameter name="lines" class="java.lang.String"/>
+	<parameter name="Test" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="359" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="1" width="410" height="1" uuid="f7d3bdb5-10eb-408e-85a6-9aecd4dbefe0"/>
+			</line>
+			<line>
+				<reportElement x="0" y="1" width="1" height="349" uuid="28360640-7d7d-42db-a437-75bf95e933ee">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="410" y="0" width="1" height="349" uuid="8b307a28-9f2b-4f36-aac3-b3b437e1c853">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="105" y="10" width="200" height="30" uuid="e665a214-cca3-452b-b60a-5d866a05bd0a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{instructions}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="39" y="50" width="330" height="38" uuid="afe5bd92-6597-4022-8d0f-dfb5daf891a7">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Test}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="9" y="100" width="390" height="180" uuid="f3819887-a1fa-4716-bcf1-01c30c900fbf">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{lines}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="329" width="410" height="1" uuid="3ab8fc4d-569d-4bb7-884a-69943ee7f285"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="329" width="130" height="20" uuid="da063097-66c5-4ec2-814f-414e3a99551c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[ No.12,Kaluwella Rd,Galle.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="129" y="329" width="90" height="20" uuid="b15cd66d-d5a1-448f-85a3-c6745622ad37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tel : 0774523096]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="329" width="190" height="20" uuid="e9378411-efe4-4992-b5bc-3ccca0d350a8">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Email : medilabsuwasahana@gmail.com]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="350" width="410" height="1" uuid="3e538f07-b2f6-4a8b-bbed-53f309178d5b"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

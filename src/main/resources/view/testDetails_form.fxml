@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.TestDetailsFormController">
+
+    <children>
+        <ImageView fitHeight="864.0" fitWidth="1588.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/labbacground1.jpg" />
+            </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#40bbbf" height="864.0" layoutX="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+        <ImageView fitHeight="45.0" fitWidth="44.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="-1.0" layoutY="6.0" onAction="#onActionBackBtn" prefHeight="49.0" prefWidth="63.0" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <ImageView fitHeight="434.0" fitWidth="608.0" layoutX="540.0" layoutY="72.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/logo.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="tblTests" layoutX="71.0" layoutY="370.0" prefHeight="494.0" prefWidth="1465.0">
+            <columns>
+                <TableColumn fx:id="colTestId" prefWidth="94.0" text="Test Code" />
+                <TableColumn fx:id="colTestsSection" prefWidth="200.0" text="Test Section" />
+                <TableColumn fx:id="colTestName" minWidth="0.0" prefWidth="249.0" text="Test Name" />
+                <TableColumn fx:id="colSample" minWidth="0.0" prefWidth="208.0" text="Sample Type" />
+                <TableColumn fx:id="colEstTime" prefWidth="213.0" text="Estimated time" />
+                <TableColumn fx:id="colDoctor" prefWidth="307.0" text="Sectional Head Doctor" />
+                <TableColumn fx:id="colPrice" prefWidth="193.0" text="Price" />
+            </columns>
+        </TableView>
+        <ImageView fitHeight="108.0" fitWidth="73.0" layoutX="-1.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/test detail icon.png" />
+            </image>
+        </ImageView>
+      <TextField fx:id="txtTestCode" layoutX="87.0" layoutY="289.0" onAction="#onActionTxtTestCodeSearch" prefHeight="44.0" prefWidth="221.0" promptText="Search Test Code ">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <JFXButton fx:id="clearBtn" alignment="CENTER" buttonType="RAISED" layoutX="332.0" layoutY="297.0" onAction="#onActionClearBtn" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: #40bbbf;" text="Clear" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="getInstructionsbtn" alignment="CENTER" buttonType="RAISED" layoutX="448.0" layoutY="290.0" onAction="#onActionGetInstructions" prefHeight="44.0" prefWidth="185.0" style="-fx-background-color: #6785cf;" text="Get Instruction List" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <CheckBox fx:id="chBoxLang" alignment="CENTER" layoutX="664.0" layoutY="303.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="104.0" style="-fx-background-color: #ffffff;" text="English" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="DejaVu Serif Bold" size="13.0" />
+         </font>
+      </CheckBox>
+    </children>
+
+</AnchorPane>

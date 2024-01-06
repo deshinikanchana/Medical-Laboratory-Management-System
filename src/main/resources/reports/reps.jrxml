@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-12-04T11:55:41 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Test_Report" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c5bdff46-ae12-4fc3-8ddb-944a927c2edb">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="ptName" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="gender" class="java.lang.String"/>
+	<parameter name="refferedBy" class="java.lang.String"/>
+	<parameter name="section" class="java.lang.String"/>
+	<parameter name="date" class="java.lang.String"/>
+	<parameter name="specimenId" class="java.lang.String"/>
+	<parameter name="specimenType" class="java.lang.String"/>
+	<parameter name="ptId" class="java.lang.String"/>
+	<parameter name="collectingCenter" class="java.lang.String"/>
+	<parameter name="machineName" class="java.lang.String"/>
+	<parameter name="testName" class="java.lang.String"/>
+	<parameter name="subTestName1" class="java.lang.String"/>
+	<parameter name="result1" class="java.lang.String"/>
+	<parameter name="unit1" class="java.lang.String"/>
+	<parameter name="referenceRange1" class="java.lang.String"/>
+	<parameter name="comment" class="java.lang.String"/>
+	<parameter name="subTestName2" class="java.lang.String"/>
+	<parameter name="subTestName3" class="java.lang.String"/>
+	<parameter name="subTestName4" class="java.lang.String"/>
+	<parameter name="subTestName5" class="java.lang.String"/>
+	<parameter name="subTestName6" class="java.lang.String"/>
+	<parameter name="subTestName7" class="java.lang.String"/>
+	<parameter name="subTestName8" class="java.lang.String"/>
+	<parameter name="subTestName9" class="java.lang.String"/>
+	<parameter name="subTestName11" class="java.lang.String"/>
+	<parameter name="subTestName10" class="java.lang.String"/>
+	<parameter name="subTestName12" class="java.lang.String"/>
+	<parameter name="subTestName13" class="java.lang.String"/>
+	<parameter name="subTestName14" class="java.lang.String"/>
+	<parameter name="subTestName15" class="java.lang.String"/>
+	<parameter name="subTestName16" class="java.lang.String"/>
+	<parameter name="subTestName17" class="java.lang.String"/>
+	<parameter name="result2" class="java.lang.String"/>
+	<parameter name="result3" class="java.lang.String"/>
+	<parameter name="result4" class="java.lang.String"/>
+	<parameter name="result5" class="java.lang.String"/>
+	<parameter name="result6" class="java.lang.String"/>
+	<parameter name="result7" class="java.lang.String"/>
+	<parameter name="result8" class="java.lang.String"/>
+	<parameter name="result9" class="java.lang.String"/>
+	<parameter name="result10" class="java.lang.String"/>
+	<parameter name="result11" class="java.lang.String"/>
+	<parameter name="result12" class="java.lang.String"/>
+	<parameter name="result13" class="java.lang.String"/>
+	<parameter name="result14" class="java.lang.String"/>
+	<parameter name="result15" class="java.lang.String"/>
+	<parameter name="result16" class="java.lang.String"/>
+	<parameter name="result17" class="java.lang.String"/>
+	<parameter name="referenceRange2" class="java.lang.String"/>
+	<parameter name="referenceRange3" class="java.lang.String"/>
+	<parameter name="referenceRange4" class="java.lang.String"/>
+	<parameter name="referenceRange5" class="java.lang.String"/>
+	<parameter name="referenceRange6" class="java.lang.String"/>
+	<parameter name="referenceRange7" class="java.lang.String"/>
+	<parameter name="referenceRange8" class="java.lang.String"/>
+	<parameter name="referenceRange9" class="java.lang.String"/>
+	<parameter name="referenceRange10" class="java.lang.String"/>
+	<parameter name="referenceRange11" class="java.lang.String"/>
+	<parameter name="referenceRange12" class="java.lang.String"/>
+	<parameter name="referenceRange13" class="java.lang.String"/>
+	<parameter name="referenceRange14" class="java.lang.String"/>
+	<parameter name="referenceRange15" class="java.lang.String"/>
+	<parameter name="referenceRange16" class="java.lang.String"/>
+	<parameter name="referenceRange17" class="java.lang.String"/>
+	<parameter name="unit2" class="java.lang.String"/>
+	<parameter name="unit3" class="java.lang.String"/>
+	<parameter name="unit4" class="java.lang.String"/>
+	<parameter name="unit5" class="java.lang.String"/>
+	<parameter name="unit6" class="java.lang.String"/>
+	<parameter name="unit7" class="java.lang.String"/>
+	<parameter name="unit8" class="java.lang.String"/>
+	<parameter name="unit9" class="java.lang.String"/>
+	<parameter name="unit10" class="java.lang.String"/>
+	<parameter name="unit11" class="java.lang.String"/>
+	<parameter name="unit12" class="java.lang.String"/>
+	<parameter name="unit13" class="java.lang.String"/>
+	<parameter name="unit14" class="java.lang.String"/>
+	<parameter name="unit15" class="java.lang.String"/>
+	<parameter name="unit16" class="java.lang.String"/>
+	<parameter name="unit17" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="744" splitType="Stretch">
+			<image>
+				<reportElement x="-20" y="191" width="590" height="539" uuid="881ba75c-9cfb-449f-a1dc-6bc68ed191ef"/>
+				<imageExpression><![CDATA["/home/kmgdk/Downloads/project  Lab Pics/logo Dark.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-10" y="200" width="80" height="21" uuid="3e5ad1d9-3a8a-44c8-bff3-aea79b1f9966"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="200" width="80" height="21" uuid="14236cfb-e65e-46ee-a10d-47076256c977"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Result]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="285" y="200" width="120" height="21" uuid="e62f5f90-f1ae-4fbb-8bdf-24b2c39b0fa8">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Reference Range]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="474" y="200" width="80" height="21" uuid="0754ed4e-f57f-42fd-96c4-034266e45a52"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Unit]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="619" width="80" height="21" uuid="53337f49-bff4-4496-a8aa-8265eefc45d8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Comment :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="696" width="145" height="21" uuid="8271fb30-766c-495d-adc7-c92fbea7bb35"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="12" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[-----------------------------]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="408" y="709" width="144" height="34" uuid="bc1630f1-7c2b-4940-a0a9-bbb098ecd82f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Medical Laboratory Technologist]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="-11" y="235" width="141" height="20" uuid="b4c1f059-4ebb-4f0c-9173-d95f21997ffe"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="11" isBold="true" isUnderline="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{testName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="260" width="130" height="20" uuid="6f860c9a-182c-4f9b-868f-09af57342661">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="258" width="100" height="20" uuid="543d34e8-3b45-42ec-96cb-fff10b667ee9">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="259" width="100" height="19" uuid="e0a83397-76e2-4e95-b387-9202acddc187">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="258" width="140" height="20" uuid="5b188ce4-578a-402b-88df-64fee7f5c1c6">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="646" width="530" height="42" uuid="36840cf7-a12e-42bb-96b9-0f08db7a8c8c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{comment}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-21" y="190" width="595" height="1" uuid="059c5e44-864a-4b6b-acfc-85923180772e"/>
+			</line>
+			<staticText>
+				<reportElement x="389" y="-10" width="186" height="30" uuid="d8007d42-d089-4f71-9921-0f100683cbf7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUWASAHANA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="405" y="22" width="149" height="20" uuid="debae0b8-928e-4d9e-a1f6-a454893ebb0d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Medical Laboratory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="46" width="46" height="21" uuid="f391c926-f2d4-462e-a1ba-09ce840cab3c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="67" width="100" height="21" uuid="7ee79470-3d46-4096-88dc-e7b804d8a50f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Specimen Code :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="86" width="100" height="21" uuid="fc524b36-cd8f-4905-b244-2d631d6c5c73">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Specimen Type :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="106" width="100" height="21" uuid="c897383c-9bba-4ec7-bd60-e99f91da4b10"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[patient Id :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="319" y="130" width="110" height="21" uuid="c0f7ee11-0115-4187-ad96-87b9ddb51fec"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Collecting Center :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="166" width="100" height="21" uuid="fbc2f681-3f80-4257-bd12-82c1f1f74b49"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Performed By :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="127" width="120" height="21" uuid="933b525c-f009-4575-9912-efb8c1390541">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{machineName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="166" width="134" height="21" uuid="7492328a-0b82-4f36-811e-462d42738098">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{collectingCenter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="106" width="119" height="21" uuid="6688663d-ec46-4d2c-807d-fc6aca34ddec"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ptId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="86" width="127" height="21" uuid="a05cde8c-e578-49bb-b418-7e77825d63fb"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{specimenType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="67" width="127" height="21" uuid="adcb0e5f-c721-458a-afcb-de176ee26180">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{specimenId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="49" width="127" height="21" uuid="a0348184-b2f4-435a-bdce-76870b4eb0e7">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{date}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-20" y="-10" width="190" height="30" uuid="5d5617bb-342b-47cf-b1f9-25340b9eac9c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LABORATORY REPORT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-20" y="10" width="190" height="20" uuid="3240e335-ff13-4427-bae6-728265aa9a64"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PRIVATE  AND CONFIDENTIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-11" y="46" width="80" height="21" uuid="ec28bfee-fb86-4d71-8d7a-75f197bd00f4">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Name           :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="67" width="80" height="21" uuid="744196db-3cc3-4c98-b800-96297906ab0b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Age              :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="86" width="80" height="21" uuid="a493af86-e3e2-47f8-9871-df473bec49c5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Gender        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="106" width="80" height="21" uuid="8310105c-c908-44f7-be49-9f50c91c3e8d"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Reffered By :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="166" width="80" height="21" uuid="55b94547-e531-4cfd-866f-99a5aaf1585e"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="11"/>
+				</textElement>
+				<text><![CDATA[Test Section :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="166" width="142" height="21" uuid="98e1e9eb-3518-456d-aa79-28996e83ef14">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{section}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="106" width="142" height="21" uuid="56e37a01-7e98-4e43-9a66-7b4bbe923f83">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{refferedBy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="86" width="142" height="21" uuid="4bc6d88f-8d52-442f-aa65-e5970469c612">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="67" width="142" height="21" uuid="98347d20-cf77-4582-bd75-404e0231e209">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="80" y="46" width="142" height="21" uuid="22906543-cfdc-4bba-8831-6416abd66a1e">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="C059" size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ptName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="280" width="130" height="20" uuid="f3cee5f0-7463-4d72-a1e9-69a4a3909943"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="300" width="130" height="20" uuid="22c62188-e246-424f-a3fa-b03921906080"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="320" width="130" height="20" uuid="9d00f142-1d4b-4fec-aa56-7fc500b83961"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="340" width="130" height="20" uuid="1b88ec96-00a5-40de-8c7d-52c81e4feec6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="360" width="130" height="20" uuid="9a6af0ce-4fb8-4af9-a36a-a9d556a897f9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="380" width="130" height="20" uuid="3385119f-7a03-4c3d-bf26-ece309215cde"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="400" width="130" height="20" uuid="bc8058bd-849e-4b87-aad6-f9c031b8175a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="420" width="130" height="20" uuid="4d225df8-c4e5-4b4f-a4fc-e0572d283ac7"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="460" width="130" height="20" uuid="ffc1f6bb-f571-4e74-ac9e-a6b3db702652"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="440" width="130" height="20" uuid="a338a853-476c-40d5-a687-f2291c902b87"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="480" width="130" height="20" uuid="2ea7d507-e4ef-40b3-8842-fd069b416e93"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="500" width="130" height="20" uuid="0db4f4cd-3edc-4460-8263-526aa514aff8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="520" width="130" height="20" uuid="889555de-494a-43a8-8348-208ca5d5e30b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="540" width="130" height="20" uuid="deab3a03-7138-44f7-bef9-985ad5d0d184"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="560" width="130" height="20" uuid="408a3450-1c6e-4124-a060-1505cde0b5fc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-4" y="580" width="130" height="20" uuid="1e4b1fd1-efc8-4843-a13f-2d144a54e181">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{subTestName17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="280" width="100" height="19" uuid="d90cceff-112f-4c00-8a26-949acfcd23ff">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="300" width="100" height="19" uuid="68722191-ea88-4807-a22d-3513c3e8e1cd"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="321" width="100" height="19" uuid="88425279-1f49-41b8-8a4c-4f46d60f57a9"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="340" width="100" height="19" uuid="d2e11e4b-c7f6-4bf0-bcb7-bb6b2d422472"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="361" width="100" height="19" uuid="d682388d-f649-4e5b-b39b-d7c0bab3c912"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="381" width="100" height="19" uuid="7121730c-ff6d-470d-88f3-6368eeacf643"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="399" width="100" height="19" uuid="6d20a2a4-5071-4c56-baae-811e340b0ee7"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="420" width="100" height="19" uuid="e84274a3-4233-466c-89fd-e622061f4eeb"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="440" width="100" height="19" uuid="9f7964bb-bfef-4800-a32c-56ae6f7b3371"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="460" width="100" height="19" uuid="0e797bbd-3df9-4d0c-b296-ee43ee33c349"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="480" width="100" height="19" uuid="3b725374-0c4b-49cd-a127-a6877712ff03"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="501" width="100" height="19" uuid="17385fdc-64f2-44fd-9617-3d99b73dc974"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="520" width="100" height="19" uuid="e67c9088-f5ad-44a3-a0b9-7ffb2bcc2bf4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="541" width="100" height="19" uuid="fcfde933-8274-4ec1-9d15-d4c0748b9f16"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="560" width="100" height="19" uuid="e193474c-f3e7-4397-b92e-9fef922f2fb4"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="470" y="581" width="100" height="19" uuid="bdb16a41-91e2-4d63-91a6-42c04898449c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{unit17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="280" width="100" height="20" uuid="c83b42d0-45f5-4438-9e24-c4a8de38b49d">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="300" width="100" height="20" uuid="508e4e7b-6397-4156-b6a8-5d05027a4afd"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="320" width="100" height="20" uuid="2095cfe6-916b-4531-ab1b-767bc2e16211"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="340" width="100" height="20" uuid="a7b457c6-7bf4-491e-8057-50f2fd35c749"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="360" width="100" height="20" uuid="bd27a7a4-2ce4-4fc3-906a-f6a1a5d3ff2c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="380" width="100" height="20" uuid="3d1e026e-8d7d-487a-95d4-ae3f42a29de0"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="400" width="100" height="20" uuid="78078fb3-8414-45f4-b884-9793a1d4aeaf"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="419" width="100" height="20" uuid="3512901d-7996-4711-8014-1ffc14ade4a5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="439" width="100" height="20" uuid="8ae605df-fb0d-465e-ad83-60e30a937b06"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="460" width="100" height="20" uuid="dab8af49-bafc-4c5c-b3f7-fc089a78c589"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="480" width="100" height="20" uuid="22324534-ccfa-4b5b-bc4f-2a69f93e496d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="500" width="100" height="20" uuid="b6c4eb26-61ec-4275-9021-27e515d624a9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="520" width="100" height="20" uuid="9a704ef3-a9af-49db-96d5-d6df0f37e536"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="540" width="100" height="20" uuid="cc59fb94-05da-4d80-927e-1d40ac50c976"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="560" width="100" height="20" uuid="0f6e441f-4438-4e20-96c6-6d898ab98d0c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="152" y="580" width="100" height="20" uuid="9e7dbdc8-31a7-4629-9065-0db04467cda1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{result17}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="279" width="140" height="20" uuid="f01d68b0-2466-4afa-9482-023696a96afc">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="300" width="140" height="20" uuid="d1804eb7-cfc6-4346-bbc0-bde1ca33ddcf">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="320" width="140" height="20" uuid="624edc01-a2f7-4834-93bb-35fd6206c042"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="339" width="140" height="20" uuid="8772d4d6-ea81-44a2-a354-45e1e1862a78"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="359" width="140" height="20" uuid="c0de6846-f47c-428f-b3c9-a1af4cf5346c"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="381" width="140" height="20" uuid="09f768f0-01ea-4af7-ab5d-a988dab9ef79"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="398" width="140" height="20" uuid="4a7e2636-bcc3-4444-acaa-b6e55429ad2b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="420" width="140" height="20" uuid="1bc9ff2c-70bb-41f1-95d7-7d4de47eb9ed"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="439" width="140" height="20" uuid="6af08525-a970-42c2-8ad9-336b34b42c70"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="459" width="140" height="20" uuid="896b7ef4-5c1d-49a1-8b5c-fb159db206ad"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="479" width="140" height="20" uuid="944558e3-4910-4084-ab94-908634538c08"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="500" width="140" height="20" uuid="6617a899-72c2-400f-a6a0-b42fe87a99a5"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange13}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="520" width="140" height="20" uuid="9a5aaeb9-4505-4acd-8da4-8efbcf209e96"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange14}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="540" width="140" height="20" uuid="ea1a710a-8632-4909-b816-fe61a0888884"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange15}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="560" width="140" height="20" uuid="36501b84-4c33-4f8c-867a-26b32e8cf16b"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange16}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="580" width="140" height="20" uuid="ed3b1914-68b2-4e52-920d-1e33e6ad51e8"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="8"/>
+					<paragraph lineSpacingSize="0.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{referenceRange17}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="306" y="-20" width="91" height="83" uuid="889e492c-1afc-4bca-82ec-7eaa9327f389"/>
+				<imageExpression><![CDATA["/home/kmgdk/JaspersoftWorkspace/logo o.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<summary>
+		<band height="56" splitType="Stretch">
+			<line>
+				<reportElement x="-20" y="50" width="595" height="1" uuid="50fff67f-dccc-412b-a50c-5fecf5cfc4ac"/>
+			</line>
+			<line>
+				<reportElement x="-21" y="25" width="595" height="1" uuid="789e8b47-772d-482e-af62-9ce45271c56f"/>
+			</line>
+			<staticText>
+				<reportElement x="-20" y="29" width="190" height="20" uuid="86685c28-d08d-4d05-a96d-43fbf887cb4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Address : No.12,Kaluwella Rd,Galle.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="177" y="30" width="190" height="20" uuid="437bbca9-7b03-4ac7-9395-502cc59e4d7a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tel : 0774523096]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="28" width="190" height="20" uuid="682270f7-7025-4e5b-994c-609c7aa656f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Email : medilabsuwasahana@gmail.com]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

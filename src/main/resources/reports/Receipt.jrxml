@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-11-28T17:21:32 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Report" pageWidth="500" pageHeight="600" columnWidth="460" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3c07e0c8-a9b7-47a2-83ce-720233a20cd3">
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="presId" class="java.lang.String"/>
+	<parameter name="ptId" class="java.lang.String"/>
+	<parameter name="ptName" class="java.lang.String"/>
+	<parameter name="ptAge" class="java.lang.String"/>
+	<parameter name="ptEmail" class="java.lang.String"/>
+	<parameter name="reffBy" class="java.lang.String"/>
+	<parameter name="colCenter" class="java.lang.String"/>
+	<parameter name="gender" class="java.lang.String"/>
+	<parameter name="test1" class="java.lang.String"/>
+	<parameter name="test2" class="java.lang.String"/>
+	<parameter name="test3" class="java.lang.String"/>
+	<parameter name="test4" class="java.lang.String"/>
+	<parameter name="test5" class="java.lang.String"/>
+	<parameter name="test6" class="java.lang.String"/>
+	<parameter name="t1Price" class="java.lang.String"/>
+	<parameter name="t2Price" class="java.lang.String"/>
+	<parameter name="t3Price" class="java.lang.String"/>
+	<parameter name="t4Price" class="java.lang.String"/>
+	<parameter name="t5Price" class="java.lang.String"/>
+	<parameter name="t6Price" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<parameter name="paid" class="java.lang.String"/>
+	<parameter name="due" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="500" splitType="Stretch">
+			<image>
+				<reportElement x="19" y="46" width="417" height="414" uuid="315f03ef-6e63-453a-87bf-ab3dd672f587"/>
+				<imageExpression><![CDATA["/home/kmgdk/intelij project/Medical-Laboratoey-Management-System/src/main/resources/Icon/logo Dark.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="5" y="6" width="1" height="479" uuid="c9ec244a-678c-4ba5-8ee1-7714088b2acd"/>
+			</line>
+			<line>
+				<reportElement x="5" y="5" width="460" height="1" uuid="96fe525b-c58d-4892-b606-67b195716873"/>
+			</line>
+			<line>
+				<reportElement x="5" y="485" width="460" height="1" uuid="437c86f7-008e-46e8-b548-61b4f6245c9c"/>
+			</line>
+			<line>
+				<reportElement x="465" y="6" width="1" height="479" uuid="e7c384ec-ad48-421e-b5b3-f4d0c7848648"/>
+			</line>
+			<staticText>
+				<reportElement x="185" y="10" width="100" height="27" uuid="824058c6-9b87-445e-beb3-4b81af64a0e8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="30" width="353" height="27" uuid="a42a5d18-68d3-4efb-9d71-470ff3267548"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Math TeX Gyre" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Suwasahana Medical Laboratory]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="80" width="111" height="16" uuid="d062d8c5-5407-45ac-81bb-4c321040495c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Prescription No :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="103" width="111" height="16" uuid="c647fc0e-07a9-4a68-b02a-b203f7bcf8d1">
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Patient Code :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="120" width="111" height="16" uuid="f7395ac8-09da-43e5-9706-582b2bc5e10d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="140" width="111" height="16" uuid="32c88af3-0d7c-41cd-8270-a71a01899e67"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Age :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="160" width="111" height="16" uuid="2d7bb174-0423-4cbb-b2a0-a2255fe064a1"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Email Address :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="221" y="110" width="111" height="16" uuid="599caede-c946-492f-bc60-24a67dd1eeaf"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Gender :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="410" width="111" height="16" uuid="f371f736-1584-4d21-8821-a5d8fc3b1d45"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Paid Amount :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="176" width="111" height="16" uuid="b0757b75-4190-40ba-a1a0-db5097302700"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Reffered By :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="67" width="51" height="16" uuid="14fefeb6-8de3-4ea4-8765-34a93687ddf4"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="86" width="51" height="16" uuid="1ca7e186-5c00-41d1-8e9a-0c93191bcc65"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Time :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="70" y="210" width="143" height="20" uuid="0fd952b6-ecb0-43e4-9538-10a2fe0e49bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[TEST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="210" width="111" height="20" uuid="37b7fc7c-c15c-4e41-807d-15255ee53abf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Serif" size="12" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="245" y="133" width="87" height="30" uuid="de604393-d5e9-4611-b6c0-7b0e7ff30839"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Collecting Center :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="394" width="111" height="16" uuid="fbb6c4c2-d395-41f7-a870-952dfa6b8d8f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Total Amount :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="440" width="111" height="16" uuid="c379b2cf-de1b-48cc-ad34-2c033f0bc176"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Due Payment :]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="388" y="65" width="74" height="21" uuid="98666634-599f-4567-91ec-07f3f362d8de"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="382" y="86" width="75" height="17" uuid="349b9702-e8f0-440d-a29a-18dcc3ecc949"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bitstream Charter" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="5" y="393" width="460" height="1" uuid="a315235d-d85f-4622-b900-2b059a4d7ab3"/>
+			</line>
+			<line>
+				<reportElement x="293" y="439" width="172" height="1" uuid="0a95a98d-48d5-4823-b075-0fdb0f8ab79d"/>
+			</line>
+			<line>
+				<reportElement x="6" y="460" width="459" height="1" uuid="1a98837f-4bf6-4cdb-bf79-c00e584450ca"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="465" width="173" height="20" uuid="1a9dc6cf-7bdc-45d2-840f-426abd1092dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Address : No.12,Kaluwella Rd,Galle.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="466" width="100" height="20" uuid="c2744336-9a92-49d6-9cb6-2bb32cc13f19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Tel : 0774523096]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="273" y="465" width="190" height="20" uuid="b33454ee-8602-4a19-970a-ccbaa0f784f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Gargi" size="10" isBold="false" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Email : medilabsuwasahana@gmail.com]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="80" width="100" height="16" uuid="f8bf6960-9a03-4892-96c4-e3e23cb484e1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="aakar" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{presId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="104" width="115" height="16" uuid="e5694f75-22cb-4789-b72c-c065e1faa8b6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="aakar" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ptId}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="120" width="120" height="16" uuid="b4755120-04a4-45d3-bcd2-d2f5a11fa7df"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="aakar" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ptName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="140" width="83" height="16" uuid="48916628-8dd7-4932-98f3-3c9c129c1db6"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="aakar" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ptAge}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="160" width="136" height="16" uuid="ba6d0ad6-89f8-4bef-89b7-5a6da194d73c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="aakar" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ptEmail}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="176" width="136" height="16" uuid="77b7c80e-55b8-4770-8e8f-816b6187f1b1"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="aakar" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reffBy}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="140" width="125" height="16" uuid="136bba74-b7fe-4920-9000-3ceacc3e27aa"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="aakar" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{colCenter}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="110" width="122" height="16" uuid="febad7eb-f3df-4eaa-ba34-bd3ddf8be115"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="aakar" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{gender}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="243" width="261" height="21" uuid="55e2ac13-9981-4004-ba94-f6f34e955f0f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{test1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="263" width="258" height="21" uuid="ce43549d-dba0-4474-969d-a0553a760fb5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{test2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="283" width="258" height="21" uuid="b11bc365-d4dd-45ea-8247-66d32dbc336e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{test3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="304" width="258" height="21" uuid="49718532-4cde-4e7f-87f6-eefc804cc765"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{test4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="325" width="258" height="21" uuid="5d294ab7-964d-4d25-86ff-0be96151e81e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{test5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="8" y="346" width="258" height="21" uuid="fb61fb18-e019-48ce-a006-da5654a9a48f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Serif" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{test6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="243" width="165" height="14" uuid="ea9fafec-37d7-402b-9997-4413614204c8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t1Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="262" width="165" height="14" uuid="9ef98c65-157e-49d5-be52-92d75e68b020"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t2Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="286" width="165" height="14" uuid="8e753332-8beb-47a1-bea4-74daac4f49cf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t3Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="307" width="165" height="14" uuid="bc0c6136-d506-49bf-b08a-a964bdda710e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t4Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="286" y="328" width="165" height="14" uuid="08ffc152-090b-4a67-a5e8-c7bc37e701fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t5Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="284" y="349" width="165" height="14" uuid="385da5e0-23a7-4342-8990-0f0999b980ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{t6Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="392" width="120" height="18" uuid="53a3c62f-c8c6-4859-aa8c-0a64f546eeec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="306" y="410" width="120" height="20" uuid="c207dceb-e886-4afa-8e30-75a0cc1e73ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{paid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="308" y="438" width="120" height="20" uuid="5b5088b2-971e-4cfe-83bf-708e2a6e4468"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="C059" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{due}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

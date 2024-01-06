@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.StockUsageFormController">
+
+    <children>
+        <ImageView fitHeight="864.0" fitWidth="1588.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/labbacground1.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77caeb" height="864.0" layoutX="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+        <ImageView fitHeight="45.0" fitWidth="44.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="-1.0" layoutY="6.0" onAction="#onActionBackBtn" prefHeight="49.0" prefWidth="63.0" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="214.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="463.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="712.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="587.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="338.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <ImageView fitHeight="63.0" fitWidth="79.0" layoutX="4.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/stock icon.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="69.0" fitWidth="69.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/od.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="69.0" fitWidth="73.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/supplier .png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="3.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/stock icon.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="434.0" fitWidth="608.0" layoutX="540.0" layoutY="72.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/logo.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="tblStockUsage" layoutX="72.0" layoutY="407.0" prefHeight="367.0" prefWidth="1464.0" style="-fx-background-color: #ffffff;">
+            <columns>
+                <TableColumn fx:id="colTestCode" prefWidth="187.0" text="Test Code" />
+            <TableColumn fx:id="colTestName" prefWidth="377.0" text="Test Name" />
+                <TableColumn fx:id="colItemCode" prefWidth="201.0" text="Item Code" />
+            <TableColumn fx:id="colItemName" prefWidth="399.0" text="Item Name" />
+                <TableColumn fx:id="colUsagePerTest" minWidth="0.0" prefWidth="299.0" text="Usage Per test" />
+            </columns>
+        </TableView>
+        <Label alignment="CENTER_RIGHT" layoutX="282.0" layoutY="58.0" prefHeight="37.0" prefWidth="144.0" text="Test Name :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="1326.0" layoutY="787.0" onAction="#onActionSaveBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #40bbbf;" text="Save" textFill="#020000">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="DejaVu Serif Bold" size="17.0" />
+            </font>
+        </JFXButton>
+        <TextField fx:id="txtUsagePerTest" alignment="CENTER" layoutX="460.0" layoutY="250.0" prefHeight="52.0" prefWidth="400.0" style="-fx-background-color: #ffffff;">
+            <font>
+                <Font name="FreeSans" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+      <ComboBox fx:id="cmbTestName" layoutX="460.0" layoutY="50.0" onAction="#onActionSearchCmbTestName" prefHeight="52.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" />
+      <ImageView fitHeight="49.0" fitWidth="31.0" layoutX="39.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/used.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="stockManageBtn" buttonType="RAISED" layoutX="2.0" layoutY="215.0" onAction="#onActionStockItemBtn" onMouseEntered="#onActionStocksMouseEntered" onMouseExited="#onActionStocksMouseExited" prefHeight="119.0" prefWidth="69.0" text=" " />
+      <JFXButton fx:id="ordersBtn" buttonType="RAISED" layoutX="3.0" layoutY="590.0" onAction="#onActionOrdersBtn" onMouseEntered="#onActionOrdersMouseEntered" onMouseExited="#onActionOrdersMouseExited" prefHeight="119.0" prefWidth="69.0" text=" " />
+      <JFXButton fx:id="supplierManageBtn" buttonType="RAISED" layoutX="3.0" layoutY="465.0" onAction="#onActionSuppliersBtn" onMouseEntered="#onActionSuppliersMouseEntered" onMouseExited="#onActionSuppliersMouseExited" prefHeight="119.0" prefWidth="69.0" text=" " />
+      <JFXButton fx:id="UsageBtn" buttonType="RAISED" layoutX="3.0" layoutY="341.0" onMouseEntered="#onActionUsageMouseEntered" onMouseExited="#onActionUsageMouseExited" prefHeight="119.0" prefWidth="69.0" text=" " />
+      <Label alignment="CENTER_RIGHT" layoutX="282.0" layoutY="257.0" prefHeight="37.0" prefWidth="144.0" text="Usage Per Test :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="282.0" layoutY="158.0" prefHeight="37.0" prefWidth="144.0" text="Item Name :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbItemName" layoutX="460.0" layoutY="150.0" onAction="#onActionSearchCmbItemName" prefHeight="52.0" prefWidth="400.0" style="-fx-background-color: #ffffff;" />
+      <Label fx:id="lblStock" alignment="CENTER" layoutX="98.0" layoutY="310.0" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Manage Stock" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblUsage" alignment="CENTER" layoutX="98.0" layoutY="433.0" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Stock Usage" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblSuppliers" alignment="CENTER" layoutX="98.0" layoutY="558.0" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Manage Suppliers" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblOrders" alignment="CENTER" layoutX="98.0" layoutY="684.0" prefHeight="30.0" prefWidth="153.0" style="-fx-background-color: #ffffff;" text="Manage Orders" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <JFXComboBox fx:id="cmbtestId" layoutX="933.0" layoutY="50.0" onAction="#onActionCmbTestIdSearch" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXComboBox fx:id="cmbItemCode" layoutX="933.0" layoutY="150.0" onAction="#onActiomCmbItemCodeSearch" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton fx:id="addBtn" buttonType="RAISED" layoutX="975.0" layoutY="334.0" onAction="#onActionAddBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #40bbbf;" text="Add" textFill="#020000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="DejaVu Serif Bold" size="17.0" />
+         </font>
+      </JFXButton>
+    </children>
+
+</AnchorPane>

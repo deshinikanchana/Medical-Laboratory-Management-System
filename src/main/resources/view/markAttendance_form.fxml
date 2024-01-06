@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.MarkAttendanceFormController">
+
+    <children>
+        <ImageView fitHeight="864.0" fitWidth="1588.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/labbacground1.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#40bbbf" height="864.0" layoutX="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+        <ImageView fitHeight="45.0" fitWidth="44.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="-1.0" layoutY="6.0" onAction="#onActionBackBtn" prefHeight="49.0" prefWidth="63.0" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <ImageView fitHeight="434.0" fitWidth="608.0" layoutX="540.0" layoutY="72.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/logo.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="tblAttendance" layoutX="71.0" layoutY="464.0" prefHeight="400.0" prefWidth="1465.0">
+            <columns>
+                <TableColumn fx:id="colDate" prefWidth="167.0" text="Date" />
+                <TableColumn fx:id="colEmployeeId" prefWidth="214.0" text="Employee Id" />
+                <TableColumn fx:id="colEmployeeName" prefWidth="319.0" text="Emplyee Name" />
+                <TableColumn fx:id="colInTime" minWidth="0.0" prefWidth="227.0" text="In Time" />
+                <TableColumn fx:id="colOutTime" prefWidth="235.0" text="Out Time" />
+                <TableColumn fx:id="colStatus" prefWidth="302.0" text="Status" />
+            </columns>
+        </TableView>
+        <Label alignment="CENTER_RIGHT" layoutX="388.0" layoutY="176.0" prefHeight="44.0" prefWidth="160.0" text="Employee Name :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="388.0" layoutY="67.0" prefHeight="44.0" prefWidth="160.0" text="Employee Id :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="421.0" layoutY="304.0" prefHeight="44.0" prefWidth="127.0" text="Status :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="15.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="421.0" layoutY="386.0" onAction="#onActionSaveBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #77caeb;" text="Save" textFill="#020000">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+            <font>
+                <Font name="DejaVu Serif Bold" size="17.0" />
+            </font>
+        </JFXButton>
+        <TextField fx:id="txtEmpName" alignment="CENTER" layoutX="597.0" layoutY="172.0" prefHeight="52.0" prefWidth="342.0">
+            <font>
+                <Font name="FreeSans" size="15.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+      <JFXComboBox fx:id="cmbEmpId" editable="true" focusColor="#8f9197" layoutX="597.0" layoutY="63.0" onAction="#onActionSearchCmbEmpId" prefHeight="52.0" prefWidth="342.0" style="-fx-background-color: #ffffff;" unFocusColor="#fffefe">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <CheckBox fx:id="checkBoxIn" layoutX="675.0" layoutY="237.0" mnemonicParsing="false" onAction="#onActionCheckboxIn" prefHeight="30.0" prefWidth="44.0" text=" " textFill="#070000">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+      </CheckBox>
+      <Label alignment="CENTER_RIGHT" layoutX="528.0" layoutY="237.0" prefHeight="30.0" prefWidth="127.0" text="IN :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="793.0" layoutY="237.0" prefHeight="30.0" prefWidth="63.0" text="OUT :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="checkBoxOut" layoutX="879.0" layoutY="237.0" mnemonicParsing="false" onAction="#onActionCheckBoxOut" prefHeight="30.0" prefWidth="12.0" text=" " textFill="#070000">
+         <font>
+            <Font name="FreeSerif Bold" size="15.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="txtStatus" alignment="CENTER" layoutX="594.0" layoutY="300.0" prefHeight="52.0" prefWidth="348.0">
+         <font>
+            <Font name="FreeSans" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <ImageView fitHeight="71.0" fitWidth="73.0" layoutX="2.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/attendance orig.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="updateBtn" buttonType="RAISED" layoutX="976.0" layoutY="386.0" onAction="#onActionUpdateBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #77caeb;" text="Update" textFill="#020000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="DejaVu Serif Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lbaDate" alignment="CENTER" layoutX="1103.0" layoutY="29.0" prefHeight="44.0" prefWidth="253.0" style="-fx-background-color: #ffffff;" text=" " textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <JFXButton fx:id="clearBtn" buttonType="RAISED" layoutX="705.0" layoutY="386.0" onAction="#onActionClearBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #77caeb;" text="Clear" textFill="#020000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="DejaVu Serif Bold" size="17.0" />
+         </font>
+      </JFXButton>
+    </children>
+
+</AnchorPane>

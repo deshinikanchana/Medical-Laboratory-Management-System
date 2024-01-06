@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="360.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.SuccessAlertFormController">
+   <children>
+      <ImageView fitHeight="419.0" fitWidth="481.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/bgnew.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5bb7c7a5" height="362.0" stroke="BLACK" strokeType="INSIDE" width="481.0" />
+      <ImageView fitHeight="220.0" fitWidth="416.0" layoutX="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/success.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="154.0" prefHeight="55.0" prefWidth="349.0" text="Success !!!" textFill="#070000">
+         <font>
+            <Font name="FreeSerif Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="79.0" layoutY="238.0" prefHeight="43.0" prefWidth="330.0" text="Your Password Has Been Reset Successfully !!!" textFill="#070000">
+         <font>
+            <Font name="FreeSans Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="78.0" layoutY="281.0" prefHeight="26.0" prefWidth="330.0" text="Now You Can Login Using Your New Password." textFill="#070000">
+         <font>
+            <Font name="FreeSans" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

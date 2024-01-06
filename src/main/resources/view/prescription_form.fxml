@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.PrescriptionFormController">
+<children>
+<ImageView fitHeight="864.0" fitWidth="1588.0" pickOnBounds="true" preserveRatio="true">
+    <image>
+        <Image url="@../Icon/labbacground1.jpg" />
+    </image>
+</ImageView>
+<Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77caeb" height="864.0" layoutX="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+<ImageView fitHeight="45.0" fitWidth="44.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+    <image>
+        <Image url="@../Icon/back.png" />
+    </image>
+    <cursor>
+        <Cursor fx:constant="DEFAULT" />
+    </cursor>
+</ImageView>
+<ImageView fitHeight="434.0" fitWidth="608.0" layoutX="540.0" layoutY="72.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+    <image>
+        <Image url="@../Icon/logo.png" />
+    </image>
+</ImageView>
+<Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="463.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+<Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="587.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+<Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="338.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+<ImageView fitHeight="79.0" fitWidth="73.0" layoutX="1.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true">
+    <image>
+        <Image url="@../Icon/prescription.png" />
+    </image>
+</ImageView>
+<ImageView fitHeight="72.0" fitWidth="82.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+    <image>
+        <Image url="@../Icon/patient icon.png" />
+    </image>
+</ImageView>
+      <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="2.0" layoutY="6.0" onAction="#onActionBackBtn" prefHeight="49.0" prefWidth="63.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="patientBtn" buttonType="RAISED" layoutY="337.0" onAction="#onActionPatientsBtn" onMouseEntered="#onActionPatientsMouseEntered" onMouseExited="#onActionPatientsMouseExited" prefHeight="125.0" prefWidth="73.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="PrescriptionBtn" buttonType="RAISED" layoutX="-2.0" layoutY="465.0" onMouseEntered="#onActionPrescriptionBtnMouseEntered" onMouseExited="#onActionPrescriptionBtnMouseExited" prefHeight="119.0" prefWidth="73.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Label layoutX="220.0" layoutY="95.0" prefHeight="49.0" prefWidth="200.0" />
+      <TableView fx:id="tblPrescription" layoutX="72.0" layoutY="501.0" prefHeight="278.0" prefWidth="1464.0">
+        <columns>
+          <TableColumn fx:id="colTestCode" prefWidth="235.0" text="Test Code" />
+          <TableColumn fx:id="colTestName" prefWidth="449.0" text="Test Name" />
+            <TableColumn fx:id="colTestPrice" prefWidth="384.0" text="Test Price" />
+            <TableColumn fx:id="colTime" prefWidth="395.0" text="Estimated Time" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER_RIGHT" layoutX="305.0" layoutY="77.0" prefHeight="44.0" prefWidth="98.0" text="Patient Id :" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="598.0" layoutY="81.0" prefHeight="37.0" prefWidth="139.0" text="Patient Name :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="114.0" layoutY="10.0" prefHeight="44.0" prefWidth="194.0" text="Prescription No :" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="322.0" layoutY="213.0" prefHeight="44.0" prefWidth="73.0" text="Test Id :" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="826.0" layoutY="213.0" prefHeight="44.0" prefWidth="194.0" text="Test Name :" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="275.0" layoutY="352.0" prefHeight="44.0" prefWidth="117.0" text="Reffered By :" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="839.0" layoutY="9.0" prefHeight="44.0" prefWidth="194.0" text="Date :" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="1117.0" layoutY="81.0" prefHeight="37.0" prefWidth="55.0" text="Age :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="308.0" layoutY="145.0" prefHeight="44.0" prefWidth="92.0" text="Center Id :" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="293.0" layoutY="284.0" prefHeight="37.0" prefWidth="98.0" text="Test Price :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="870.0" layoutY="284.0" prefHeight="37.0" prefWidth="150.0" text="Estimated Time :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="BtnAdd" alignment="CENTER" buttonType="RAISED" layoutX="1114.0" layoutY="410.0" onAction="#onActionAddBtn" prefHeight="54.0" prefWidth="117.0" style="-fx-background-color: #40bbbf;" text="Add ">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" alignment="CENTER" buttonType="RAISED" layoutX="1330.0" layoutY="795.0" onAction="#onActionSaveBtn" prefHeight="54.0" prefWidth="193.0" style="-fx-background-color: #40bbbf;" text="Save Prescription">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label alignment="CENTER_RIGHT" layoutX="123.0" layoutY="799.0" prefHeight="54.0" prefWidth="150.0" text="Total Amount :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="506.0" layoutY="800.0" prefHeight="54.0" prefWidth="150.0" text="Paid Amount :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="911.0" layoutY="799.0" prefHeight="54.0" prefWidth="150.0" text="Due Payments :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPresId" alignment="CENTER" layoutX="322.0" layoutY="10.0" onAction="#onActionPresId" prefHeight="44.0" prefWidth="139.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTotalAmount" alignment="CENTER" editable="false" layoutX="283.0" layoutY="806.0" prefHeight="44.0" prefWidth="203.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtPaidAmount" alignment="CENTER" layoutX="667.0" layoutY="806.0" onAction="#onActionBtnPaidAmount" prefHeight="44.0" prefWidth="203.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtDuePayment" alignment="CENTER" editable="false" layoutX="1070.0" layoutY="806.0" prefHeight="44.0" prefWidth="203.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtPtName" alignment="CENTER" editable="false" layoutX="754.0" layoutY="80.0" prefHeight="37.0" prefWidth="314.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtPtAge" alignment="CENTER" editable="false" layoutX="1197.0" layoutY="80.0" prefHeight="37.0" prefWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPrice" alignment="CENTER" editable="false" layoutX="421.0" layoutY="284.0" prefHeight="37.0" prefWidth="158.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtEstTime" alignment="CENTER" editable="false" layoutX="1047.0" layoutY="284.0" prefHeight="37.0" prefWidth="225.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtRef" alignment="CENTER" layoutX="421.0" layoutY="352.0" prefHeight="37.0" prefWidth="283.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtDate" alignment="CENTER" editable="false" layoutX="1047.0" layoutY="10.0" prefHeight="37.0" prefWidth="240.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="826.0" layoutY="145.0" prefHeight="44.0" prefWidth="194.0" text="Center Name :" textFill="#070000">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbPtId" layoutX="422.0" layoutY="80.0" onAction="#onActionCmbPtIdSearch" prefHeight="37.0" prefWidth="105.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXComboBox fx:id="cmbTestId" layoutX="422.0" layoutY="216.0" onAction="#onActionTestIdSearch" prefHeight="37.0" prefWidth="105.0" style="-fx-background-color: #ffffff;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton fx:id="newPtBtn" alignment="CENTER" buttonType="RAISED" layoutX="531.0" layoutY="69.0" onAction="#onActionNewPtBtn" prefHeight="24.0" prefWidth="63.0" style="-fx-background-color: #40bbbf;" text="New+" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label fx:id="lblPatient" alignment="CENTER" layoutX="96.0" layoutY="424.0" prefHeight="37.0" prefWidth="158.0" style="-fx-background-color: #ffffff;" text="Manage Patients" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblPrescription" alignment="CENTER" layoutX="96.0" layoutY="540.0" prefHeight="37.0" prefWidth="181.0" style="-fx-background-color: #ffffff;" text="Manage Prescriptions" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <TextField fx:id="txtCenterName" alignment="CENTER" editable="false" layoutX="1047.0" layoutY="149.0" prefHeight="37.0" prefWidth="314.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtCenterId" alignment="CENTER" editable="false" layoutX="420.0" layoutY="149.0" prefHeight="37.0" prefWidth="105.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtTestName" alignment="CENTER" editable="false" layoutX="1047.0" layoutY="216.0" prefHeight="37.0" prefWidth="314.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+</children>
+</AnchorPane>

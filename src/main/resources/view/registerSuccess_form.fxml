@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="360.0" prefWidth="481.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.RegisterSuccessFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5babc7" height="362.0" stroke="BLACK" strokeType="INSIDE" width="481.0" />
+        <ImageView fitHeight="231.0" fitWidth="288.0" layoutX="105.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/registered.png" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="57.0" layoutY="214.0" prefHeight="55.0" prefWidth="379.0" text="Successfully Registered !!!" textFill="#070000">
+            <font>
+                <Font name="FreeSerif Bold" size="30.0" />
+            </font>
+        </Label>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="278.0" prefHeight="55.0" prefWidth="430.0" text="It Will Take 24 Hours For Your New Account To Be Activated." textAlignment="CENTER" textFill="#070000" wrapText="true">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

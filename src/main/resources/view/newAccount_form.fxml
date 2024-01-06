@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="526.0" prefWidth="668.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.NewAccountFormController">
+   <children>
+      <ImageView fitHeight="880.0" fitWidth="935.0" layoutX="-267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/labbacground1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="266.0" fitWidth="341.0" layoutX="194.0" layoutY="130.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="149.0" layoutY="14.0" prefHeight="45.0" prefWidth="371.0" text="Register As A New User" textFill="#070000">
+         <font>
+            <Font name="DejaVu Serif Bold" size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5b72857e" height="414.0" layoutX="48.0" layoutY="72.0" stroke="#313775b8" strokeType="INSIDE" width="572.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="104.0" layoutY="105.0" prefHeight="35.0" prefWidth="137.0" text="Name :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="104.0" layoutY="165.0" prefHeight="35.0" prefWidth="137.0" text="User Type :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="104.0" layoutY="225.0" prefHeight="35.0" prefWidth="137.0" text="Email :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="79.0" layoutY="345.0" prefHeight="35.0" prefWidth="162.0" text="Confirm Password :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="79.0" layoutY="285.0" prefHeight="35.0" prefWidth="162.0" text="Password :" textFill="#070000">
+         <font>
+            <Font name="DejaVu Sans Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="274.0" layoutY="100.0" prefHeight="45.0" prefWidth="300.0" />
+      <TextField fx:id="txtEmail" layoutX="274.0" layoutY="220.0" prefHeight="45.0" prefWidth="300.0" />
+      <TextField fx:id="txtPw" layoutX="274.0" layoutY="280.0" prefHeight="45.0" prefWidth="300.0" />
+      <TextField fx:id="txtConfirmPw" layoutX="274.0" layoutY="340.0" prefHeight="45.0" prefWidth="300.0" />
+      <ChoiceBox fx:id="choicebxUserType" layoutX="274.0" layoutY="160.0" prefHeight="45.0" prefWidth="300.0" />
+      <JFXButton fx:id="btnRegister" buttonType="RAISED" layoutX="254.0" layoutY="426.0" onAction="#onActionBtnRegister" prefHeight="45.0" prefWidth="162.0" style="-fx-background-color: #14c786;" text="Register">
+         <font>
+            <Font name="Yrsa Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <PasswordField fx:id="pwfPw" layoutX="274.0" layoutY="280.0" prefHeight="45.0" prefWidth="300.0" />
+      <PasswordField fx:id="pwfConfirmPw" layoutX="274.0" layoutY="340.0" prefHeight="45.0" prefWidth="300.0" />
+      <CheckBox fx:id="checkBoxPw" layoutX="274.0" layoutY="387.0" mnemonicParsing="false" onAction="#onActionCheckBoxPw" text="Show Password" textFill="#070000" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.DesignationManageFormController">
+    <children>
+      <ImageView fitHeight="864.0" fitWidth="1588.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/labbacground1.jpg" />
+         </image>
+      </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77caeb" height="864.0" layoutX="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="73.0" />
+        <ImageView fitHeight="45.0" fitWidth="44.0" layoutX="10.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </ImageView>
+        <JFXButton fx:id="backBtn" buttonType="RAISED" layoutX="6.0" layoutY="4.0" onAction="#onActionBackBtn" prefHeight="50.0" prefWidth="52.0" text="  ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="214.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="463.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="712.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="587.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <Line endX="55.0" fill="#2d53da" layoutX="10.0" layoutY="338.0" startX="-5.0" stroke="#2d53da" strokeWidth="3.0" />
+        <ImageView fitHeight="78.0" fitWidth="63.0" layoutX="4.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/sal.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="78.0" fitWidth="63.0" layoutX="4.0" layoutY="625.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/empl.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="78.0" fitWidth="63.0" layoutX="3.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/job.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="3.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/att.jpg" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="employeeManageBtn" buttonType="RAISED" layoutX="-1.0" layoutY="591.0" onAction="#onActionEmployeeManageBtn" onMouseEntered="#onActionEmployeesMouseEntered" onMouseExited="#onActionEmployeesMouseExited" prefHeight="116.0" prefWidth="73.0" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <JFXButton fx:id="viewAttendanceBtn" buttonType="RAISED" layoutY="342.0" onAction="#onActionViewAttendanceBtn" onMouseEntered="#onActionViewAttendanceMouseEntered" onMouseExited="#onActionViewAttendanceMouseExited" prefHeight="116.0" prefWidth="73.0" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <JFXButton fx:id="manageSalariesBtn" buttonType="RAISED" layoutX="-1.0" layoutY="219.0" onAction="#onActionManageSalariesBtn" onMouseEntered="#onActionSalaryMouseEntered" onMouseExited="#onActionSalaryMouseExited" prefHeight="116.0" prefWidth="73.0" text=" ">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+        </JFXButton>
+        <ImageView fitHeight="434.0" fitWidth="608.0" layoutX="540.0" layoutY="72.0" opacity="0.35" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Icon/logo.png" />
+            </image>
+        </ImageView>
+        <TableView fx:id="tblDesignations" layoutX="72.0" layoutY="473.0" prefHeight="391.0" prefWidth="1463.0">
+            <columns>
+                <TableColumn fx:id="colJobId" prefWidth="171.0" text="Job Id" />
+                <TableColumn fx:id="colJobRole" prefWidth="221.0" text="Job Role" />
+                <TableColumn fx:id="colBasicSalary" minWidth="0.0" prefWidth="232.0" text="Basic Salary" />
+                <TableColumn fx:id="colOtPayments" prefWidth="260.0" text="OT Payment Per Hour" />
+            <TableColumn fx:id="colwrkinghrs" minWidth="0.0" prefWidth="308.0" text="Working Hours Per Month" />
+            <TableColumn fx:id="colEmpCount" minWidth="0.0" prefWidth="270.0" text="Employees Count" />
+            </columns>
+        </TableView>
+        <Label alignment="CENTER_RIGHT" layoutX="276.0" layoutY="65.0" prefHeight="14.0" prefWidth="111.0" text="Job Id :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtJobId" alignment="CENTER" layoutX="450.0" layoutY="50.0" onAction="#txtJobIdSearchOnAction" prefHeight="50.0" prefWidth="248.0">
+            <font>
+                <Font name="FreeSans" size="13.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <Label alignment="CENTER_RIGHT" layoutX="949.0" layoutY="65.0" prefHeight="14.0" prefWidth="111.0" text="Job Role :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="17.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER_RIGHT" layoutX="247.0" layoutY="190.0" prefHeight="21.0" prefWidth="140.0" text="Basic Salary :" textFill="#070000">
+            <font>
+                <Font name="DejaVu Sans Bold" size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtBasicSalary" alignment="CENTER" layoutX="450.0" layoutY="175.0" onAction="#onActionBasicSalaryTxt" prefHeight="50.0" prefWidth="248.0">
+            <font>
+                <Font name="FreeSans" size="13.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <Label alignment="CENTER_RIGHT" layoutX="933.0" layoutY="178.0" prefHeight="45.0" prefWidth="127.0" text="OT Payments Per Hour  :" textAlignment="RIGHT" textFill="#070000" wrapText="true">
+            <font>
+                <Font name="DejaVu Sans Bold" size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtOt" alignment="CENTER" editable="false" layoutX="1150.0" layoutY="175.0" prefHeight="50.0" prefWidth="248.0">
+            <font>
+                <Font name="FreeSans" size="13.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+        </TextField>
+        <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="500.0" layoutY="400.0" onAction="#onActionSaveBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #40bbbf;" text="Save" textFill="#070000">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+        </JFXButton>
+        <JFXButton fx:id="updateBtn" alignment="CENTER" buttonType="RAISED" layoutX="675.0" layoutY="400.0" onAction="#onActionUpdateBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #40bbbf;" text="Update" textFill="#070000">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+        </JFXButton>
+        <JFXButton fx:id="deleteBtn" buttonType="RAISED" layoutX="850.0" layoutY="400.0" onAction="#onActionDeleteBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #40bbbf;" text="Delete" textFill="#000000">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+        </JFXButton>
+        <JFXButton fx:id="clearBtn" buttonType="RAISED" layoutX="1025.0" layoutY="400.0" onAction="#onActionClearBtn" prefHeight="52.0" prefWidth="127.0" style="-fx-background-color: #40bbbf;" text="Clear" textFill="#070000">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <DropShadow />
+            </effect>
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+        </JFXButton>
+      <TextField fx:id="txtJobRole" alignment="CENTER" layoutX="1150.0" layoutY="50.0" onAction="#onActionJobRoleTxt" prefHeight="50.0" prefWidth="248.0">
+         <font>
+            <Font name="FreeSans" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <TextField fx:id="txtWorkingHrs" layoutX="450.0" layoutY="300.0" onAction="#onActionWrkHrsTxt" prefHeight="50.0" prefWidth="248.0">
+         <font>
+            <Font name="FreeSans" size="13.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="229.0" layoutY="299.0" prefHeight="52.0" prefWidth="158.0" text="Working Hours per month :" textAlignment="RIGHT" textFill="#070000" wrapText="true">
+         <font>
+            <Font name="DejaVu Sans Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutY="466.0" onMouseEntered="#onActionDesignationMouseEntered" onMouseExited="#onActionDesignationMouseExited" prefHeight="116.0" prefWidth="73.0" text=" " />
+      <Label fx:id="lblSalary" alignment="CENTER" layoutX="81.0" layoutY="299.0" prefHeight="44.0" prefWidth="165.0" style="-fx-background-color: #ffffff;" text="Manage Salary" textFill="#070000" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblviewAttendance" alignment="CENTER" layoutX="81.0" layoutY="410.0" prefHeight="44.0" prefWidth="165.0" style="-fx-background-color: #ffffff;" text="View Attendance" textFill="#070000" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblDesignation" alignment="CENTER" layoutX="81.0" layoutY="542.0" prefHeight="44.0" prefWidth="176.0" style="-fx-background-color: #ffffff;" text="Manage Designations" textFill="#070000" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblEmployees" alignment="CENTER" layoutX="87.0" layoutY="666.0" prefHeight="44.0" prefWidth="165.0" style="-fx-background-color: #ffffff;" text="Manage Employees" textFill="#070000" visible="false">
+         <font>
+            <Font name="DejaVu Serif Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+    </children>
+</AnchorPane>

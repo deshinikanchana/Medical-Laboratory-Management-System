@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="864.0" prefWidth="1536.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.laboratory.controller.WelcomeScreenFormController">
+   <children>
+      <ImageView fx:id="welcome" fitHeight="864.0" fitWidth="1330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/login bg.jpeg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#77caeb" height="864.0" layoutX="768.0" stroke="#00000003" strokeType="INSIDE" width="768.0" />
+      <ImageView fitHeight="362.0" fitWidth="399.0" layoutX="962.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Icon/logo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="990.0" layoutY="377.0" prefHeight="55.0" prefWidth="325.0" text="Your Health,Our Highest Priority" textFill="#0c3c85f9">
+         <font>
+            <Font name="DejaVuMathTeXGyre-Regular" size="19.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="974.0" layoutY="451.0" prefHeight="75.0" prefWidth="358.0" text="SUWASAHANA">
+         <font>
+            <Font name="MathJax_Main-Bold" size="40.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6362085938453674" green="0.2089424878358841" blue="0.9210526347160339" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.19463087248322147">
+                     <color>
+                        <Color red="0.6362085938453674" green="0.2089424878358841" blue="0.9210526347160339" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8557046979865771">
+                     <color>
+                        <Color red="0.02905701845884323" green="0.6973684430122375" blue="0.4523209035396576" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.02905701845884323" green="0.6973684430122375" blue="0.4523209035396576" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" layoutX="909.0" layoutY="505.0" prefHeight="100.0" prefWidth="488.0" text="Medical Laboratory">
+         <font>
+            <Font name="Liberation Serif Bold" size="55.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.9761904761904762" endY="0.9333333333333333" startX="0.05238095238095238">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.011330408975481987" green="0.40789473056793213" blue="0.25587841868400574" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.33341455459594727" green="0.06335282325744629" blue="0.5263158082962036" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <JFXButton fx:id="btnToLoginForm" buttonType="RAISED" layoutX="1089.0" layoutY="650.0" onAction="#onActionBtnToLoginForm" prefHeight="44.0" prefWidth="128.0" ripplerFill="#596161ed" style="-fx-background-color: #14c786;" text="Log In" textFill="#070000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Yrsa Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect></JFXButton>
+      <Line endX="594.0" layoutX="941.0" layoutY="746.0" startX="-172.0" />
+      <Label alignment="CENTER" layoutX="1106.0" layoutY="728.0" prefHeight="37.0" prefWidth="94.0" style="-fx-background-color: #77caeb;" text="Or">
+         <font>
+            <Font name="DejaVu Serif Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnNewAccount" buttonType="RAISED" layoutX="1046.0" layoutY="794.0" onAction="#onActionNewAccount" prefHeight="45.0" prefWidth="214.0" ripplerFill="#596161ed" style="-fx-background-color: #14c786;" text="Create A New Account" textFill="#070000">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Yrsa Bold" size="21.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
